@@ -16,7 +16,7 @@ module.exports = (function defaultGot() {
     },
     responseType: 'buffer',
     dnsCache: true,
-    headers: { 'user-agent': process.env.USER_AGENT || DEFAULT_USER_AGENT },
+    headers: { 'user-agent': process.env.USER_AGENT || DEFAULT_USER_AGENT, "accept-language": "tr" },
   }
 
   if (process.env.ENABLE_REDIS === '1' || true) {
